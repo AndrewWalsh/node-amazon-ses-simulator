@@ -1,5 +1,7 @@
 # node-amazon-ses-simulator
 
+[![npm version](https://badge.fury.io/js/node-amazon-ses-simulator.svg)](https://badge.fury.io/js/node-amazon-ses-simulator)
+
 A local server that simulates responses from Amazon's Simple Email Service (SES).
 
 [![Screen Shot 2017-02-01 at 03.54.47.png](https://s29.postimg.org/4j0uh0xvb/Screen_Shot_2017_02_01_at_03_54_47.png)](https://postimg.org/image/hzxszw86r/)

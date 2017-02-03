@@ -104,7 +104,7 @@ function emailIsValid(body) {
 }
 
 function emailToSend() {
-  const shouldSendError = (Math.floor(Math.random() * 100)) <= error ? true : false;
+  const shouldSendError = (Math.ceil(Math.random() * 100)) <= error ? true : false;
   if (shouldSendError) {
     return { email: xmlError, status: 400 };
   }
@@ -125,7 +125,7 @@ app.use((req, res) => {
   }
 
   // Mock latency
-  const numberBetweenOneAndOneHundredFifty = Math.floor((Math.random() * 100)) + 50;
+  const numberBetweenOneAndOneHundredFifty = Math.ceil((Math.random() * 100)) + 50;
   setTimeout(() => {
     // See https://docs.aws.amazon.com/ses/latest/DeveloperGuide/api-error-codes.html
     const { email, status } = emailToSend();

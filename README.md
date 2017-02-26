@@ -35,7 +35,7 @@ const ses = new AWS.SES({
 
 ## What and why
 
-Put simply - the server will respond with valid XML that Amazon's SDK will accept.
+Put simply - this server will respond with valid XML that Amazon's SDK will accept.
 
 Amazon have their own [test server](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/mailbox-simulator.html) but it isn't free - with the same cost as regular emails. This can be frustrating when you need to test services sending large volumes of emails.
 
